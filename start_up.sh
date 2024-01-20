@@ -1,4 +1,13 @@
 #!/bin/bash
+
+# Step 1: Move the directory to /usr/lib/
+sudo git clone https://github.com/heliophysicsPy/pyhc-docker-environment.git /usr/lib/cdf38_0-dist
+
+# Step 2: Set environment variables
+export CDF_BASE="/usr/lib/cdf38_0-dist"
+export CDF_LIB="$CDF_BASE/lib"
+
+
 sudo mkdir ~/shared
 sudo mkdir ~/shared/examples
 sudo mkdir ~/shared/newly_created_python_envs
@@ -6,10 +15,10 @@ sudo mkdir ~/shared/python_libraries_dependencies
 
 sudo chmod -R 777 ~/shared
 
-sudo mkdir -p /opt/.sunpy
-sudo mkdir -p /opt/heliopy/data
-sudo mkdir -p /opt/Geospacelab/Data
-sudo mkdir -p /opt/.spacepy/data
+sudo mkdir -p ~/shared/.sunpy
+sudo mkdir -p ~/shared/heliopy/data
+sudo mkdir -p ~/shared/Geospacelab/Data
+sudo mkdir -p ~/shared/.spacepy/data
 
 sudo chmod -R 755 /opt/.sunpy
 sudo chmod -R 755 /opt/heliopy/data
