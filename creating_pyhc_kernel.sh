@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Step 0: Initialize Conda (if not already done)
+eval "$(conda shell.bash hook)"
 # Step 1: Add environment.yaml
 conda env create -f ~/shared/python_libraries_dependencies/environment.yml
 
