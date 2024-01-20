@@ -1,8 +1,8 @@
 #!/bin/bash
-sudo mkdir /shared
-sudo mkdir /shared/examples
-sudo mkdir /shared/newly_created_python_envs
-sudo mkdir /shared/python_libraries_dependencies
+sudo mkdir ~/shared
+sudo mkdir ~/shared/examples
+sudo mkdir ~/shared/newly_created_python_envs
+sudo mkdir ~/shared/python_libraries_dependencies
 
 sudo chmod -R 777 /shared
 
