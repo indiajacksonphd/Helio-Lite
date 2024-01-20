@@ -10,7 +10,8 @@ conda activate pyhc-all
 # Step 3: Add requirements.txt
 pip install --no-cache-dir numpy==1.24.3
 pip install --no-cache-dir spacepy --no-build-isolation
-pip install -r ~/shared/python_libraries_dependencies/requirements.txt
+# pip install -r ~/shared/python_libraries_dependencies/requirements.txt
+pip install --use-pep517 --retries 5 --no-cache-dir -r ~/shared/python_libraries_dependencies/requirements.txt
 pip install --no-cache-dir git+https://github.com/nasa/Kamodo.git
 pip install --no-cache-dir pytplot==1.7.28
 pip install --no-cache-dir pytplot-mpl-temp
