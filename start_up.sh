@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo mkdir /shared
 sudo mkdir /shared/examples
 sudo mkdir /shared/newly_created_python_envs
