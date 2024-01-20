@@ -4,7 +4,7 @@ sudo mkdir ~/shared/examples
 sudo mkdir ~/shared/newly_created_python_envs
 sudo mkdir ~/shared/python_libraries_dependencies
 
-sudo chmod -R 777 /shared
+sudo chmod -R 777 ~/shared
 
 sudo mkdir -p /opt/.sunpy
 sudo mkdir -p /opt/heliopy/data
@@ -31,4 +31,3 @@ curl -o ~/shared/python_libraries_dependencies/requirements.txt https://raw.gith
 
 sudo curl -o /etc/profile.d/create_shared_link.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/create_shared_link.sh
 sudo chmod +x /etc/profile.d/create_shared_link.sh
-sudo chmod -R 775 /shared
