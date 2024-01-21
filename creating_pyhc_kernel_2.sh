@@ -23,4 +23,8 @@ sudo ipython kernel install --prefix /opt/tljh/user/ --name=pyhc-all --display-n
 
 # Step 7: Clean up and restart JupyterHub
 conda deactivate
+mv start_up.sh /shared/python_libraries_dependencies/
+mv add_miniconda.sh /shared/python_libraries_dependencies/
+mv creating_pyhc_kernel_2.sh /shared/python_libraries_dependencies/
+
 sudo systemctl restart jupyterhub.service
