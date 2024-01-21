@@ -1,0 +1,14 @@
+{
+ "argv": [
+  "/opt/tljh/user/envs/pyhc-all/bin/python3.9",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "PyHC All Packages",
+ "language": "python",
+ "metadata": {
+  "debugger": true
+ }
+}
