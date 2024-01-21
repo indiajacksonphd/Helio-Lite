@@ -24,4 +24,3 @@ echo "Congratulations, your setup is done! You can now logout and reboot your EC
 
 # Reset Jupyter environment and restart EC2 instance
 sudo systemctl restart jupyterhub.service
-exit
