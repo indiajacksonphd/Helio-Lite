@@ -1,3 +1,6 @@
+# Step 0: Initialize Conda (if not already done)
+eval "$(conda shell.bash hook)"
+
 # Step 1: create new environment in shared miniconda
 sudo conda env create --prefix /opt/miniconda/envs/pyhc-all -f /shared/python_libraries_dependencies/environment.yml
 
