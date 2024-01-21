@@ -4,8 +4,10 @@
 sudo git clone https://github.com/heliophysicsPy/pyhc-docker-environment.git /usr/lib/pyhc-docker-environment && sudo mv /usr/lib/pyhc-docker-environment/docker/pyhc-environment/contents/cdf38_0-dist /usr/lib/
 
 # Step 2: Set environment variables
-export CDF_BASE="/usr/lib/cdf38_0-dist"
-export CDF_LIB="$CDF_BASE/lib"
+# export CDF_BASE="/usr/lib/cdf38_0-dist"
+# export CDF_LIB="$CDF_BASE/lib"
+CDF_BASE = /usr/lib/cdf38_0-dist
+CDF_LIB = $CDF_BASE/lib
 
 
 sudo mkdir ~/shared
