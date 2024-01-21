@@ -19,7 +19,7 @@ chmod +x sharing_pyhc_kernel.sh
 ./sharing_pyhc_kernel.sh
 
 # Print the completion message
-echo "Congratulations, your setup is done! You can now logout and reboot your EC2 instance!"
+echo "Congratulations, your setup is done! You can now logout and reboot your EC2 instance! When you log back in, open to terminal to finish up!"
 
 # Reset Jupyter environment and restart EC2 instance
 sudo systemctl restart jupyterhub.service
