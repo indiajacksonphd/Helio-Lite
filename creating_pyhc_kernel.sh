@@ -20,8 +20,9 @@ pip install --no-cache-dir pytplot-mpl-temp
 pip install --no-cache-dir pyspedas
 
 git clone https://github.com/lkilcommons/ssj_auroral_boundary.git
-cd ssj_auroral_boundary
-python setup.py install
+python ssj_auroral_boundary/setup.py install
+# cd ssj_auroral_boundary
+# python setup.py install
 
 # Step 4: Add environment.yml to shared library directory
 conda env export > ~/shared/newly_created_python_envs/pyhcAll.yml
