@@ -7,6 +7,8 @@ conda env create -f ~/shared/python_libraries_dependencies/environment.yml
 # Step 2: Activate the environment
 conda activate pyhc-all
 
+sudo apt-get install -y gcc g++ gfortran ncurses-dev build-essential cmake
+
 # Step 3: Add requirements.txt
 pip install --no-cache-dir numpy==1.24.3
 pip install --no-cache-dir spacepy --no-build-isolation
@@ -16,6 +18,10 @@ pip install --no-cache-dir git+https://github.com/nasa/Kamodo.git
 pip install --no-cache-dir pytplot==1.7.28
 pip install --no-cache-dir pytplot-mpl-temp
 pip install --no-cache-dir pyspedas
+
+git clone https://github.com/lkilcommons/ssj_auroral_boundary.git
+cd ssj_auroral_boundary
+python setup.py install
 
 # Step 4: Add environment.yml to shared library directory
 conda env export > ~/shared/newly_created_python_envs/pyhcAll.yml
