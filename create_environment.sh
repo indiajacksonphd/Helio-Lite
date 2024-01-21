@@ -18,6 +18,9 @@ chmod +x sharing_pyhc_kernel.sh
 ./creating_pyhc_kernel.sh
 ./sharing_pyhc_kernel.sh
 
+# add new kernel path to kernel.json
+sudo curl -o /opt/tljh/user/share/jupyter/kernels/pyhc-all/kernel.json https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/
+
 # Print the completion message
 echo "Congratulations, your setup is done! You can now logout and reboot your EC2 instance! When you log back in, open to terminal to finish up!"
 
