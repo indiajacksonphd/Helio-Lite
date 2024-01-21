@@ -28,7 +28,7 @@ pip install --no-cache-dir pyspedas
 conda env export > /shared/newly_created_python_envs/pyhcAll.yml
 
 # Step 5: Create the environment in the shared JupyterHub environment
-sudo conda env create --prefix /opt/tljh/user/envs/pyhc-all --file /shared/newly_created_python_envs/pyhcAll.yml
+sudo conda env create --prefix /opt/miniconda/envs/pyhc-all --file /shared/newly_created_python_envs/pyhcAll.yml
 
 # Step 6: Make it into a kernel
 conda install ipykernel -y
