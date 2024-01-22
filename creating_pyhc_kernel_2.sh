@@ -2,10 +2,11 @@
 eval "$(conda shell.bash hook)"
 
 # Step 1: create new environment in shared miniconda
-sudo conda env create --prefix /opt/miniconda/envs/pyhc-all -f /shared/python_libraries_dependencies/environment.yml
-
+# sudo conda env create --prefix /opt/miniconda/envs/pyhc-all -f /shared/python_libraries_dependencies/environment.yml
+sudo conda env create --prefix /opt/tljh/user/envs/pyhc-all -f /shared/python_libraries_dependencies/environment.yml
 # Step 2: Activate the environment
-sudo conda activate /opt/miniconda/envs/pyhc-all
+# sudo conda activate /opt/miniconda/envs/pyhc-all
+sudo conda activate /opt/tljh/user/envs/pyhc-all
 
 # Step 3: Fill it up with all packages
 sudo apt-get install -y gcc g++ gfortran ncurses-dev build-essential cmake
