@@ -1,1 +1,21 @@
--
+name: ml_lite
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7  # Choose an appropriate Python version for your project
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - jupyter
+  - seaborn
+  - ipython
+  - jupytext
+  - tqdm
+  - keras  # Add Keras for deep learning (optional)
+  - pytorch  # Add PyTorch for deep learning (optional)
+  - tensorboard  # Add TensorBoard for monitoring deep learning (optional)
+  - tensorflow  # Add TensorFlow for deep learning (optional)
+  - torchvision  # Add torchvision for PyTorch (optional)
+  - xgboost  # Add XGBoost for gradient boosting (optional)
