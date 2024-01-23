@@ -74,14 +74,12 @@ Execute the following commands to manually set up the Helio-Lite environment:
 
 ```bash
 curl -o start_up.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/start_up.sh
-curl -o add_miniconda.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/add_miniconda.sh
 curl -o create_aiml_kernel.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/create_aiml_kernel.sh
 curl -o creating_pyhc_kernel_2.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/creating_pyhc_kernel_2.sh
 
 chmod +x start_up.sh add_miniconda.sh create_aiml_kernel.sh creating_pyhc_kernel_2.sh
 
 ./start_up.sh
-./add_miniconda.sh
 ./create_aiml_kernel.sh
 ./creating_pyhc_kernel_2.sh
 
