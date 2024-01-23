@@ -33,5 +33,5 @@ curl -o /shared/python_libraries_dependencies/environment.yml https://raw.github
 curl -o /shared/python_libraries_dependencies/requirements.txt https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/requirements.txt
 curl -o /shared/python_libraries_dependencies/ml.yml https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/ml.yml
 
-sudo curl -o /etc/profile.d/create_shared_link.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/create_directory_link.sh
-sudo chmod +x /etc/profile.d/create_shared_link.sh
+sudo curl -o /etc/profile.d/link_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/link_directories.sh
+sudo chmod +x /etc/profile.d/link_directories.sh
