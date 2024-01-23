@@ -4,7 +4,8 @@
 sudo git clone https://github.com/heliophysicsPy/pyhc-docker-environment.git /usr/lib/pyhc-docker-environment && sudo mv /usr/lib/pyhc-docker-environment/docker/pyhc-environment/contents/cdf38_0-dist /usr/lib/
 
 sudo mkdir /shared
-sudo mkdir /shared/examples
+sudo mkdir /shared/examples/PyHC
+sudo mkdir /shared/examples/AI_ML
 sudo mkdir /shared/newly_created_python_envs
 sudo mkdir /shared/python_libraries_dependencies
 
@@ -15,15 +16,18 @@ sudo mkdir -p /shared/heliopy/data
 sudo mkdir -p /shared/Geospacelab/Data
 sudo mkdir -p /shared/.spacepy/data
 
-curl -o /shared/examples/coordinate_systems.ipynb https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/coordinate_systems.ipynb
-curl -o /shared/examples/coordinates_demo.ipynb https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/coordinates_demo.ipynb
-curl -o /shared/examples/import-test.ipynb https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/import-test.ipynb
-curl -o /shared/examples/planet_locations.ipynb https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/planet_locations.ipynb
-curl -o /shared/examples/pytplot_demo.ipynb https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/pytplot_demo.ipynb
-curl -o /shared/examples/retrieve_compress.ipynb https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/retrieve_compress.ipynb
-curl -o /shared/examples/units_demo.ipynb https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/units_demo.ipynb
-curl -o /shared/examples/Combining_HPCA_and_EIS_energy_spectra.ipynb https://raw.githubusercontent.com/spedas/mms-examples/master/advanced/Combining_HPCA_and_EIS_energy_spectra.ipynb
-curl -o /shared/examples/04.14-Visualization-With-Seaborn.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AI_ML/04.14-Visualization-With-Seaborn.ipynb
+#PyHC examples
+curl -o /shared/examples/PyHC/coordinate_systems.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/coordinate_systems.ipynb
+curl -o /shared/examples/PyHC/coordinates_demo.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/coordinates_demo.ipynb
+curl -o /shared/examples/PyHC/import-test.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/import-test.ipynb
+curl -o /shared/examples/PyHC/planet_locations.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/planet_locations.ipynb
+curl -o /shared/examples/PyHC/pytplot_demo.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/pytplot_demo.ipynb
+curl -o /shared/examples/PyHC/retrieve_compress.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/retrieve_compress.ipynb
+curl -o /shared/examples/PyHC/units_demo.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/units_demo.ipynb
+curl -o /shared/examples/PyHC/Combining_HPCA_and_EIS_energy_spectra.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/Combining_HPCA_and_EIS_energy_spectra.ipynb
+
+# AI_ML Examples
+curl -o /shared/examples/AI_ML/04.14-Visualization-With-Seaborn.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AI_ML/04.14-Visualization-With-Seaborn.ipynb
 
 curl -o /shared/python_libraries_dependencies/environment.yml https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/environment.yml
 curl -o /shared/python_libraries_dependencies/requirements.txt https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/requirements.txt
