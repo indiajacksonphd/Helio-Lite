@@ -29,5 +29,5 @@ curl -o /shared/python_libraries_dependencies/environment.yml https://raw.github
 curl -o /shared/python_libraries_dependencies/requirements.txt https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/requirements.txt
 curl -o /shared/python_libraries_dependencies/ml.yml https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/ml.yml
 
-sudo curl -o /etc/profile.d/create_shared_link.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/create_shared_link.sh
+sudo curl -o /etc/profile.d/create_shared_link.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/create_directory_link.sh
 sudo chmod +x /etc/profile.d/create_shared_link.sh
