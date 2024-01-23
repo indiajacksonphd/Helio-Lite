@@ -7,9 +7,6 @@ dependencies:
   - gfortran_linux-64  # - gfortran=11.2  # needed for ffnet dependency of spacepy
   - gcc_linux-64  # Added to help matplotlib wheel build
   - gxx_linux-64  # Added to help matplotlib wheel build
-  - jupyter-book=0.15.1
-  - jupyterlab=4.0.10  #=3.5.0
-  - jupyterlab-git=0.50.0
   - pip
   # - pip:
   #   - aacgmv2>=2.6.2
