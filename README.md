@@ -33,7 +33,7 @@ Helio-Lite is a streamlined version of HelioCloud, designed for heliophysics res
 #!/bin/bash
 sudo apt update && sudo apt upgrade -y
 curl https://raw.githubusercontent.com/jupyterhub/the-littlest-jupyterhub/master/bootstrap/bootstrap.py | sudo python3 - --admin admin1
-
+```
 ## Step 3: Add an Elastic IP Address
 
 1. In the EC2 dashboard, select **Elastic IPs** from the left menu.
@@ -44,7 +44,7 @@ curl https://raw.githubusercontent.com/jupyterhub/the-littlest-jupyterhub/master
     - **Private IP**: (optional) Specify if needed.
     - Check **Allow this Elastic IP to be reassociated** if you plan to reuse it.
 4. Click **Associate** to link the Elastic IP with your instance.
-```
+
 
 ## Step 4: Explore Your EC2 Instance
 
@@ -90,7 +90,7 @@ sudo systemctl restart jupyterhub.service
 exit
 ```
 
-4. **Verify the Installation**
+4. Verify the Installation**
 
     After completing the setup, it's important to verify that everything is installed correctly and operational. Use the following commands to check the Jupyter kernels and Conda environments:
 
@@ -101,7 +101,7 @@ exit
 
     These commands will list the available Jupyter kernels and Conda environments, ensuring that your Helio-Lite environment is correctly set up and ready for use.
 
-5. **Log Out and Restart Your EC2 Instance**
+5. Log Out and Restart Your EC2 Instance**
 
     To ensure all changes are applied and the system is running smoothly, it's a good practice to log out of your current session and restart your EC2 instance. This can be done through the AWS Management Console. Navigate to your instance, select the **Actions** menu, and choose **Instance State > Restart**. 
 
