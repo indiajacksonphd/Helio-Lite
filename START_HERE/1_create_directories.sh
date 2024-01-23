@@ -25,8 +25,8 @@ curl -o /shared/examples/units_demo.ipynb https://raw.githubusercontent.com/heli
 curl -o /shared/examples/Combining_HPCA_and_EIS_energy_spectra.ipynb https://raw.githubusercontent.com/spedas/mms-examples/master/advanced/Combining_HPCA_and_EIS_energy_spectra.ipynb
 curl -o /shared/examples/04.14-Visualization-With-Seaborn.ipynb https://raw.githubusercontent.com/jakevdp/PythonDataScienceHandbook/master/notebooks/04.14-Visualization-With-Seaborn.ipynb
 
-curl -o /shared/python_libraries_dependencies/environment.yml https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/environment.yml
-curl -o /shared/python_libraries_dependencies/requirements.txt https://raw.githubusercontent.com/heliophysicsPy/pyhc-docker-environment/main/docker/pyhc-gallery/contents/requirements.txt
+curl -o /shared/python_libraries_dependencies/environment.yml https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/environment.yml
+curl -o /shared/python_libraries_dependencies/requirements.txt https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/requirements.txt
 curl -o /shared/python_libraries_dependencies/ml.yml https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/ml.yml
 
 sudo curl -o /etc/profile.d/create_shared_link.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/create_directory_link.sh
