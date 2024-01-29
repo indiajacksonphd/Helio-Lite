@@ -8,6 +8,7 @@ sudo mkdir /shared/examples/PyHC
 sudo mkdir /shared/examples/AI_ML
 sudo mkdir /shared/newly_created_python_envs
 sudo mkdir /shared/python_libraries_dependencies
+sudo mkdir /shared/custom_modules
 
 sudo chmod -R 777 /shared
 
@@ -32,6 +33,10 @@ curl -o /shared/examples/AI_ML/04.14-Visualization-With-Seaborn.ipynb https://ra
 curl -o /shared/python_libraries_dependencies/environment.yml https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/environment.yml
 curl -o /shared/python_libraries_dependencies/requirements.txt https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/requirements.txt
 curl -o /shared/python_libraries_dependencies/ml.yml https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/ml.yml
+curl -o /shared/python_libraries_dependencies/custom_requirements.txt https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/custom_requirements.txt
+curl -o /shared/custom_modules/aiaImages.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/libraries_dependencies/custom_requirements.txt
+
+
 
 sudo curl -o /etc/profile.d/link_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/link_directories.sh
 sudo chmod +x /etc/profile.d/link_directories.sh
