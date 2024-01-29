@@ -19,9 +19,9 @@ sudo pip install --no-cache-dir pytplot-mpl-temp
 sudo pip install --no-cache-dir pyspedas
 
 # Step 4: Copy your Python modules to the environment directory
-cp aiaImage.py /opt/tljh/user/envs/pyhc-all
-cp donkiData.py /opt/tljh/user/envs/pyhc-all
-cp dmLab.py /opt/tljh/user/envs/pyhc-all
+cp /shared/custom_modules/aiaImage.py /opt/tljh/user/envs/pyhc-all
+cp /shared/custom_modules/donkiData.py /opt/tljh/user/envs/pyhc-all
+cp /shared/custom_modules/dmLab.py /opt/tljh/user/envs/pyhc-all
 
 # Step 4: Make it into a kernel, save in tljh
 sudo conda install ipykernel -y
