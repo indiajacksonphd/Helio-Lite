@@ -1,1 +1,10 @@
--fsspec
+fsspec
+s3fs
+pyarrow
+boto3==1.34.27
+requests
+ipywidgets
+beautifulsoup4
+pandas
+pillow
+numpy
