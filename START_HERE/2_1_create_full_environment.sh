@@ -15,7 +15,7 @@ chmod +x creating_pyhc_kernel_2.sh
 ./create_aiml_kernel.sh
 ./creating_pyhc_kernel_2.sh
 
-sudo chmod -R 777 /shared
+# sudo chmod -R 777 /shared
 
 # Print the completion message
 echo "Congratulations, your setup is done! You can now logout and reboot your EC2 instance! When you log back in, open to terminal to finish up!"
