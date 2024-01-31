@@ -95,7 +95,7 @@ def on_selection_change(change):
                 if response.status_code == 200:
                         with BytesIO(response.content) as img_io:
                             pil_image = pilImage.open(img_io)
-                            pil_image.thumbnail((256, 256))
+                            # pil_image.thumbnail((256, 256))
                             with BytesIO() as buffer:
                                 pil_image.save(buffer, format="PNG")
                                 buffer.seek(0)
