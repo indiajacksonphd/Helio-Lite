@@ -32,7 +32,8 @@ Helio-Lite is a streamlined version of HelioCloud, designed for heliophysics res
 ```bash
 #!/bin/bash
 sudo apt update && sudo apt upgrade -y
-curl https://raw.githubusercontent.com/jupyterhub/the-littlest-jupyterhub/master/bootstrap/bootstrap.py | sudo python3 - --admin admin1
+# curl https://raw.githubusercontent.com/jupyterhub/the-littlest-jupyterhub/master/bootstrap/bootstrap.py | sudo python3 - --admin admin1
+curl https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/jupyterHubBootstrap.py | sudo python3 - --admin admin1
 ```
 ## Step 3: Add an Elastic IP Address
 
