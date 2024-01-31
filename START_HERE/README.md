@@ -1,4 +1,4 @@
-# START_HERE Folder Scripts Explanation
+# START_HERE
 
 ## Overview
 
