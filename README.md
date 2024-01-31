@@ -137,7 +137,6 @@ sudo conda env create --prefix /opt/tljh/user/envs/ai-ml -f python_libraries_dep
 
 Activate the newly created environment.
 ```bash
-conda deactivate
 conda activate /opt/tljh/user/envs/ai-ml
 ```
 
