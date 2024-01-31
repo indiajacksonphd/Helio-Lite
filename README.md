@@ -89,7 +89,7 @@ Execute the following commands to manually set up the Helio-Lite environment:
 ```bash
 curl -o create_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/1_create_directories.sh
 curl -o create_aiml_kernel.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/kernel_creation/create_aiml_kernel.sh
-curl -o creating_pyhc_kernel.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/kernel_creation/create_pyhc_kernel.sh
+curl -o create_pyhc_kernel.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/kernel_creation/create_pyhc_kernel.sh
 
 chmod +x create_directories.sh create_aiml_kernel.sh creating_pyhc_kernel.sh
 
