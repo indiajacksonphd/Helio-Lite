@@ -70,6 +70,7 @@ conda env list
 ```
 You should see:
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 ### Option A: Automatic Setup
 
 Execute the following commands to automatically set up the Helio-Lite environment:
@@ -95,11 +96,115 @@ chmod +x create_directories.sh create_aiml_kernel.sh creating_pyhc_kernel.sh
 
 sudo ./create_directories.sh
 ./create_aiml_kernel.sh
-./creating_pyhc_kernel.sh
+./create_pyhc_kernel.sh
 
 sudo systemctl restart jupyterhub.service
 exit
 ```
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Creating Jupyter Kernels for AI/ML and PyHC Projects
+
+This guide details the process of setting up dedicated Jupyter kernels for AI/ML and PyHC projects on a JupyterHub server. These steps assume you have administrative access to the server and the necessary permissions to install software.
+
+## Creating the AI/ML Kernel
+
+### Step 1: Create a New Environment
+
+Create a new conda environment that is accessible to all JupyterHub users.
+
+```bash
+sudo conda env create --prefix /opt/tljh/user/envs/ai-ml -f python_libraries_dependencies/ml.yml
+```
+
+### Step 2: Activate the Environment
+
+Activate the newly created environment.
+```bash
+sudo conda activate /opt/tljh/user/envs/ai-ml
+```
+
+### Step 3: Install Additional Packages
+
+Copy custom Python modules into the environment directory and install additional requirements.
+
+```bash
+sudo cp custom_modules/aiaImage.py /opt/tljh/user/envs/ai-ml
+sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/ai-ml
+sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/ai-ml
+
+sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/custom_requirements.txt
+```
+
+### Step 4: Register the Kernel
+
+Install ipykernel and register the environment as a Jupyter kernel.
+
+```bash
+sudo conda install ipykernel -y
+sudo ipython kernel install --prefix /opt/tljh/user/ --name=ai-ml --display-name "AI-ML Packages"
+```
+
+### Step 5: Restart JupyterHub
+
+Deactivate the conda environment and restart the JupyterHub service to make the new kernel available.
+
+```bash
+conda deactivate
+sudo systemctl restart jupyterhub.service
+```
+## Creating the PyHC Kernel
+
+### Step 1: Create a New Environment
+Set up a new conda environment for PyHC projects.
+
+```bash
+sudo conda env create --prefix /opt/tljh/user/envs/pyhc-all -f python_libraries_dependencies/environment.yml
+```
+
+### Step 2: Activate the Environment
+Activate the PyHC environment.
+
+```bash
+sudo conda activate /opt/tljh/user/envs/pyhc-all
+```
+
+### Step 3: Install System and Python Packages
+Install necessary system packages and Python libraries.
+
+```bash
+sudo apt-get install -y gcc g++ gfortran ncurses-dev build-essential cmake
+
+sudo pip install --no-cache-dir numpy==1.24.3
+sudo pip install --no-cache-dir spacepy --no-build-isolation
+sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/requirements.txt
+sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/custom_requirements.txt
+sudo pip install --no-cache-dir pytplot==1.7.28
+sudo pip install --no-cache-dir pytplot-mpl-temp
+sudo pip install --no-cache-dir pyspedas
+```
+
+### Step 4: Copy Custom Modules and Register the Kernel
+Copy custom Python modules and make the environment available as a Jupyter kernel.
+
+```bash
+sudo cp custom_modules/aiaImage.py /opt/tljh/user/envs/pyhc-all
+sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/pyhc-all
+sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/pyhc-all
+
+sudo conda install ipykernel -y
+sudo ipython kernel install --prefix /opt/tljh/user/ --name=pyhc-all --display-name "PyHC All Packages"
+
+```
+
+### Step 5: Restart JupyterHub
+Finally, deactivate the environment and restart the JupyterHub service.
+
+```bash
+conda deactivate
+sudo systemctl restart jupyterhub.service
+```
+
 4. Verify the Installation**
 
     After completing the setup, it's important to verify that everything is installed correctly and operational. Use the following commands to check the Jupyter kernels and Conda environments:
@@ -107,6 +212,12 @@ exit
     ```bash
     jupyter kernelspec list
     conda env list
+
+    conda activate ai-ml
+    conda list
+
+    conda activate pyhc-all
+    conda list
     ```
 
     These commands will list the available Jupyter kernels and Conda environments, ensuring that your Helio-Lite environment is correctly set up and ready for use.
