@@ -9,3 +9,4 @@ pandas
 pillow
 numpy
 pytz
+torch
