@@ -55,7 +55,7 @@ curl https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HER
 
 1. Access your EC2 instance using the Elastic IP address through SSH or the AWS Management Console.
 2. Log in with the initial admin account (`admin1`) created during the setup process.
-3. Open a terminal within the EC2 instance to execute the setup scripts.
+3. Open a terminal within your admin JupyterLab environment to execute the setup scripts.
 
 ### Option A: Automatic Setup
 
