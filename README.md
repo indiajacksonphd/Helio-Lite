@@ -106,6 +106,22 @@ exit
 
 This guide details the process of setting up dedicated Jupyter kernels for AI/ML and PyHC projects on a JupyterHub server. These steps assume you have administrative access to the server and the necessary permissions to install software.
 
+## Creating Directories
+
+Let's pull in the script to create our directories, activate it, then run it.
+
+```bash
+curl -o create_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/1_create_directories.sh
+
+chmod +x create_directories.sh
+
+sudo ./create_directories.sh
+
+sudo systemctl restart jupyterhub.service
+exit
+```
+
+
 ## Creating the AI/ML Kernel
 
 ### Step 1: Create a New Environment
