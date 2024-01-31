@@ -93,9 +93,9 @@ curl -o creating_pyhc_kernel.sh https://raw.githubusercontent.com/indiajacksonph
 
 chmod +x create_directories.sh create_aiml_kernel.sh creating_pyhc_kernel.sh
 
-./create_directories.sh
-./create_aiml_kernel.sh
-./creating_pyhc_kernel.sh
+sudo ./create_directories.sh
+sudo ./create_aiml_kernel.sh
+sudo ./creating_pyhc_kernel.sh
 
 sudo systemctl restart jupyterhub.service
 exit
