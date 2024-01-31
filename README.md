@@ -108,7 +108,7 @@ This guide details the process of setting up dedicated Jupyter kernels for AI/ML
 
 ## Creating Directories
 
-Let's pull in the script to create our directories, activate it, then run it.
+Let's pull in the script to create our directories, activate it, then run it. After you run the command, check to make sure that all of your directories have been created and all of your scripts and examples have downloaded in their respective folders.
 
 ```bash
 curl -o create_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/1_create_directories.sh
