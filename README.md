@@ -57,6 +57,19 @@ curl https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HER
 2. Log in with the initial admin account (`admin1`) created during the setup process.
 3. Open a terminal within your admin JupyterLab environment to execute the setup scripts.
 
+### Initialize Conda Enviroment
+
+```bash
+conda init bash
+exit
+```
+Open the terminal again and make sure that conda is activated:
+
+```bash
+conda env list
+```
+You should see:
+
 ### Option A: Automatic Setup
 
 Execute the following commands to automatically set up the Helio-Lite environment:
