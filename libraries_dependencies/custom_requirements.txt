@@ -6,7 +6,8 @@ requests
 ipywidgets
 beautifulsoup4
 pandas
-pillow
+Pillow
 numpy
 pytz
 torch
+image
