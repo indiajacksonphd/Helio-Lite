@@ -8,9 +8,9 @@ sudo conda env create --prefix /opt/tljh/user/envs/ai-ml -f /python_libraries_de
 sudo conda activate /opt/tljh/user/envs/ai-ml
 
 # Step 4: Copy your Python modules to the environment directory
-cp ~/shared/custom_modules/aiaImage.py /opt/tljh/user/envs/ai-ml
-cp ~/shared/custom_modules/donkiData.py /opt/tljh/user/envs/ai-ml
-cp ~/shared/custom_modules/dmLab.py /opt/tljh/user/envs/ai-ml
+cp /custom_modules/aiaImage.py /opt/tljh/user/envs/ai-ml
+cp /custom_modules/donkiData.py /opt/tljh/user/envs/ai-ml
+cp /custom_modules/dmLab.py /opt/tljh/user/envs/ai-ml
 
 sudo pip install --use-pep517 --retries 5 --no-cache-dir -r /python_libraries_dependencies/custom_requirements.txt
 
