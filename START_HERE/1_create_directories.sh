@@ -4,6 +4,7 @@
 sudo git clone https://github.com/heliophysicsPy/pyhc-docker-environment.git /usr/lib/pyhc-docker-environment && sudo mv /usr/lib/pyhc-docker-environment/docker/pyhc-environment/contents/cdf38_0-dist /usr/lib/
 
 sudo mkdir ~/shared
+sudo mkdir ~/shared/examples
 sudo mkdir ~/shared/examples/PyHC
 sudo mkdir ~/shared/examples/AI_ML
 sudo mkdir ~/shared/examples/AIA_DONKI_DMLab
