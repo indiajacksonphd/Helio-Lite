@@ -13,6 +13,7 @@ dependencies:
   - ipython
   - jupytext
   - tqdm
+  - torch
   - keras  # Add Keras for deep learning (optional)
   - pytorch  # Add PyTorch for deep learning (optional)
   - tensorboard  # Add TensorBoard for monitoring deep learning (optional)
