@@ -113,6 +113,7 @@ This guide details the process of setting up dedicated Jupyter kernels for AI/ML
 Create a new conda environment that is accessible to all JupyterHub users.
 
 ```bash
+conda deactivate # if you are in base environment, deactivate first
 sudo conda env create --prefix /opt/tljh/user/envs/ai-ml -f python_libraries_dependencies/ml.yml
 ```
 
