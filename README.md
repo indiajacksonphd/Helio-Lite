@@ -129,7 +129,7 @@ exit
 Create a new conda environment that is accessible to all JupyterHub users.
 
 ```bash
-conda deactivate # if you are in base environment, deactivate first
+conda deactivate # if you are in another environment environment, deactivate first
 sudo conda env create --prefix /opt/tljh/user/envs/ai-ml -f python_libraries_dependencies/ml.yml
 ```
 
@@ -137,7 +137,8 @@ sudo conda env create --prefix /opt/tljh/user/envs/ai-ml -f python_libraries_dep
 
 Activate the newly created environment.
 ```bash
-sudo conda activate /opt/tljh/user/envs/ai-ml
+conda deactivate
+conda activate /opt/tljh/user/envs/ai-ml
 ```
 
 ### Step 3: Install Additional Packages
@@ -145,9 +146,11 @@ sudo conda activate /opt/tljh/user/envs/ai-ml
 Copy custom Python modules into the environment directory and install additional requirements.
 
 ```bash
-sudo cp custom_modules/aiaImage.py /opt/tljh/user/envs/ai-ml
-sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/ai-ml
-sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/ai-ml
+sudo cp custom_modules/aiaImages.py /opt/tljh/user/envs/ai-mllib/python3.7
+sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/ai-mllib/python3.7
+sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/ai-mllib/python3.7
+sudo pip install torch
+sudo pip install --upgrade ipywidgets
 
 sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/custom_requirements.txt
 ```
@@ -175,6 +178,7 @@ sudo systemctl restart jupyterhub.service
 Set up a new conda environment for PyHC projects.
 
 ```bash
+conda deactivate # if you are in another environment environment, deactivate first
 sudo conda env create --prefix /opt/tljh/user/envs/pyhc-all -f python_libraries_dependencies/environment.yml
 ```
 
@@ -182,6 +186,7 @@ sudo conda env create --prefix /opt/tljh/user/envs/pyhc-all -f python_libraries_
 Activate the PyHC environment.
 
 ```bash
+conda deactivate
 sudo conda activate /opt/tljh/user/envs/pyhc-all
 ```
 
@@ -192,21 +197,22 @@ Install necessary system packages and Python libraries.
 sudo apt-get install -y gcc g++ gfortran ncurses-dev build-essential cmake
 
 sudo pip install --no-cache-dir numpy==1.24.3
-sudo pip install --no-cache-dir spacepy --no-build-isolation
 sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/requirements.txt
+sudo pip install --no-cache-dir spacepy --no-build-isolation
 sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/custom_requirements.txt
 sudo pip install --no-cache-dir pytplot==1.7.28
 sudo pip install --no-cache-dir pytplot-mpl-temp
 sudo pip install --no-cache-dir pyspedas
+sudo pip install --upgrade ipywidgets
 ```
 
 ### Step 4: Copy Custom Modules and Register the Kernel
 Copy custom Python modules and make the environment available as a Jupyter kernel.
 
 ```bash
-sudo cp custom_modules/aiaImage.py /opt/tljh/user/envs/pyhc-all
-sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/pyhc-all
-sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/pyhc-all
+sudo cp custom_modules/aiaImages.py /opt/tljh/user/envs/pyhc-all/lib/python3.7
+sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/pyhc-all/lib/python3.7
+sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/pyhc-all/lib/python3.7
 
 sudo conda install ipykernel -y
 sudo ipython kernel install --prefix /opt/tljh/user/ --name=pyhc-all --display-name "PyHC All Packages"
@@ -219,6 +225,7 @@ Finally, deactivate the environment and restart the JupyterHub service.
 ```bash
 conda deactivate
 sudo systemctl restart jupyterhub.service
+exit
 ```
 
 4. Verify the Installation**
@@ -231,9 +238,11 @@ sudo systemctl restart jupyterhub.service
 
     conda activate ai-ml
     conda list
+    conda deactivate
 
     conda activate pyhc-all
     conda list
+    conda deactivate
     ```
 
     These commands will list the available Jupyter kernels and Conda environments, ensuring that your Helio-Lite environment is correctly set up and ready for use.
