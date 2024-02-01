@@ -11,6 +11,8 @@ Helio-Lite is a streamlined, cost-effective version of HelioCloud, designed to e
   - **Space Weather Data from DONKI**: A module for retrieving space weather data from DONKI (Database Of Notifications, Knowledge, Information).
 
 - **Extensive Examples Repository**: Hosted on a JupyterHub server, Helio-Lite provides a comprehensive set of examples. This server is hosted on an Amazon Elastic Cloud Computing (EC2) Instance, offering robust performance and scalability.
+  
+- **Storage of CSV Datasets in S3 Bucket**: Helio-Lite enables the storage of CSV datasets in an Amazon S3 bucket. This approach includes "parsing in place" capabilities to conserve storage inside the EC2 instance, optimizing resource utilization.
 
 - **AWS Ecosystem**: Leveraging the AWS ecosystem, Helio-Lite offers a scalable and cost-effective solution for data sharing and computational needs in heliophysics research.
 
