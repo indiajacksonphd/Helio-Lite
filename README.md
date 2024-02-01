@@ -166,7 +166,14 @@ Install necessary system packages and Python libraries.
 sudo apt-get install -y gcc g++ gfortran ncurses-dev build-essential cmake
 ```
 
-**YOU MAY BE PROMPTED TO REBOOT AFTER THE APT-GET INSTALLATION. ONCE YOU RESTART THE EC2 INSTANCE, ACTIVATE YOUR ENVIRONMENT AGAIN**
+--------------------------------------------------------------------------------------------------------------------------------------------------
+**You may be prompted to reboot after this installation. If this is the case then go back into the terminal insert the following and continue**
+
+```bash
+conda deactivate
+conda activate /opt/tljh/user/envs/pyhc-all 
+```
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 ```bash
 sudo pip install --no-cache-dir numpy==1.24.3
