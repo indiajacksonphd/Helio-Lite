@@ -119,10 +119,9 @@ sudo cp custom_modules/aiaImages.py /opt/tljh/user/envs/ai-ml/lib/python3.7
 sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/ai-ml/lib/python3.7
 sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/ai-ml/lib/python3.7
 sudo pip install torch
+sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/custom_requirements.txt
 sudo pip install --upgrade ipywidgets
 sudo pip install --upgrade Pillow
-
-sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/custom_requirements.txt
 ```
 
 ### Step 4: Register the Kernel
