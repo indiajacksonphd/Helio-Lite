@@ -69,38 +69,8 @@ conda env list
 ```
 You should see:
 
-----------------------------------------------------------------------------------------------------------------------------------------------------
-### Option A: Automatic Setup
+<img width="375" alt="base" src="https://github.com/indiajacksonphd/Helio-lite/assets/110256537/c0c13cc6-0c83-4642-8d74-27c7419fdce1">
 
-Execute the following commands to automatically set up the Helio-Lite environment:
-
-```bash
-curl -o create_environment.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/create_environment.sh
-chmod +x create_environment.sh
-./create_environment.sh
-sudo systemctl restart jupyterhub.service
-exit
-```
-
-### Option B: Manual Setup
-
-Execute the following commands to manually set up the Helio-Lite environment:
-
-```bash
-curl -o create_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/1_create_directories.sh
-curl -o create_aiml_kernel.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/kernel_creation/create_aiml_kernel.sh
-curl -o create_pyhc_kernel.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/kernel_creation/create_pyhc_kernel.sh
-
-chmod +x create_directories.sh create_aiml_kernel.sh creating_pyhc_kernel.sh
-
-sudo ./create_directories.sh
-./create_aiml_kernel.sh
-./create_pyhc_kernel.sh
-
-sudo systemctl restart jupyterhub.service
-exit
-```
-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Creating Jupyter Kernels for AI/ML and PyHC Projects
 
@@ -220,7 +190,6 @@ sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/pyhc-all/lib/python3.9
 
 sudo conda install ipykernel -y
 sudo ipython kernel install --prefix /opt/tljh/user/ --name=pyhc-all --display-name "PyHC All Packages"
-
 ```
 
 ### Step 5: Restart JupyterHub
