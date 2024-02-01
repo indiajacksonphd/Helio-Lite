@@ -4,7 +4,19 @@
 
 The `START_HERE` folder contains several shell scripts designed to set up a scientific computing environment tailored for heliophysics research, leveraging an environment with Python libraries, Jupyter notebooks, and custom modules. This document explains each script and its role in the setup process.
 
-### 1. `1_create_directories.sh`
+### 1. `jupyterHubBootstrap.py`
+
+#### Purpose:
+
+This Python script bootstraps the installation of The Littlest JupyterHub (TLJH), configuring the JupyterHub environment with minimal dependencies. It's designed to be run directly from a `curl` command.
+
+#### Key Steps:
+
+- Parses environment variables and command line flags to customize the installation.
+- Installs or upgrades the TLJH installer using pip, based on the provided version or development flags.
+- Optionally starts a progress page server for logging installation progress.
+
+### 2. `create_directories.sh`
 
 #### Purpose:
 
@@ -17,18 +29,6 @@ Initializes the environment by cloning the Common Data Format (CDF) Library from
 - Downloads Jupyter notebooks and data files for PyHC, AI/ML, and AIA DONKI/DMLab examples.
 - Downloads environment and requirements files for Python library dependencies.
 - Downloads custom Python modules.
-
-### 2. `jupyterHubBootstrap.py`
-
-#### Purpose:
-
-This Python script bootstraps the installation of The Littlest JupyterHub (TLJH), configuring the JupyterHub environment with minimal dependencies. It's designed to be run directly from a `curl` command.
-
-#### Key Steps:
-
-- Parses environment variables and command line flags to customize the installation.
-- Installs or upgrades the TLJH installer using pip, based on the provided version or development flags.
-- Optionally starts a progress page server for logging installation progress.
 
 ### 3. `link_directories.sh`
 
