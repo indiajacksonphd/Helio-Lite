@@ -18,19 +18,7 @@ Initializes the environment by cloning the Common Data Format (CDF) Library from
 - Downloads environment and requirements files for Python library dependencies.
 - Downloads custom Python modules.
 
-### 2. `2_1_create_full_environments.sh`
-
-#### Purpose:
-
-Automates the full setup of the computing environment by downloading and executing the `1_create_directories.sh` script, as well as scripts for creating AI/ML and PyHC Jupyter kernels.
-
-#### Key Steps:
-
-- Downloads and makes executable the `create_directories.sh`, `create_aiml_kernel.sh`, and `creating_pyhc_kernel.sh` scripts.
-- Executes the aforementioned scripts to set up directories, download examples and dependencies, and create AI/ML and PyHC Jupyter kernels.
-- Restarts the JupyterHub service to apply changes.
-
-### 3. `jupyterHubBootstrap.py`
+### 2. `jupyterHubBootstrap.py`
 
 #### Purpose:
 
@@ -42,7 +30,7 @@ This Python script bootstraps the installation of The Littlest JupyterHub (TLJH)
 - Installs or upgrades the TLJH installer using pip, based on the provided version or development flags.
 - Optionally starts a progress page server for logging installation progress.
 
-### 4. `link_directories.sh`
+### 3. `link_directories.sh`
 
 #### Purpose:
 
