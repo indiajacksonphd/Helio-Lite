@@ -90,6 +90,7 @@ sudo ./create_directories.sh
 sudo systemctl restart jupyterhub.service
 exit
 ```
+Open another teminal, in a few seconds you should see a shared folder appear. This folder contains all of the examples.
 
 ## Creating the AI/ML Kernel
 
