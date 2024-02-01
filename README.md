@@ -3,7 +3,37 @@ AWS Open Source Software for Heliophysics community
 
 # Helio-Lite Setup Guide
 
-Helio-Lite is a streamlined version of HelioCloud, designed for heliophysics researchers working in smaller groups. It leverages the AWS ecosystem to provide a cost-effective, scalable solution for data sharing and computation. This guide outlines the steps to set up Helio-Lite on AWS.
+Helio-Lite is a streamlined version of HelioCloud, designed for heliophysics researchers working in smaller groups as well as citizen scientists on a budget. It leverages the AWS ecosystem to provide a cost-effective, scalable solution for data sharing and computation. It comes with two customized kernels: one for heliophysics and one for artifical intelligence and machine learning; two custom modules for dynamic extraction of AIA images from the JSOC and space weather data from DONKI, and a host of examples housed within a JupyterHub server that is hosted on an Amazon Elastic Cloud Computing Instance. This guide outlines the steps to set up Helio-Lite on AWS.
+
+# Helio-Lite: A Streamlined Heliophysics Research Platform
+
+Helio-Lite is a streamlined, cost-effective version of HelioCloud, designed to empower heliophysics researchers in smaller groups and citizen scientists, particularly those operating within budget constraints. As an open-source platform, it facilitates broader community engagement and collaboration in the field of heliophysics research.
+
+## Key Features
+
+- **Customized Kernels**: Helio-Lite comes equipped with two specialized kernels. One is tailored for heliophysics research, and the other is optimized for artificial intelligence and machine learning applications.
+
+- **Dynamic Data Extraction Modules**: The platform includes custom modules for the dynamic extraction of data:
+  - **AIA Images from JSOC**: A module for fetching AIA (Atmospheric Imaging Assembly) images from the Joint Science Operations Center.
+  - **Space Weather Data from DONKI**: A module for retrieving space weather data from DONKI (Database Of Notifications, Knowledge, Information).
+
+- **Extensive Examples Repository**: Hosted on a JupyterHub server, Helio-Lite provides a comprehensive set of examples. This server is hosted on an Amazon Elastic Cloud Computing (EC2) Instance, offering robust performance and scalability.
+
+- **AWS Ecosystem**: Leveraging the AWS ecosystem, Helio-Lite offers a scalable and cost-effective solution for data sharing and computational needs in heliophysics research.
+
+## Open Source Community
+
+As an open-source project, Helio-Lite invites contributions and collaborations from researchers, developers, and enthusiasts in the field of heliophysics. We welcome innovations and improvements to enhance the platform's capabilities.
+
+## Setting Up Helio-Lite
+
+This guide outlines the steps to set up Helio-Lite on AWS, providing a user-friendly experience for researchers and enthusiasts in heliophysics.
+
+---
+
+We hope this platform accelerates your research and exploration in the fascinating field of heliophysics. For more information on setup, usage, and contribution, please refer to the subsequent sections.
+
+
 
 ## Prerequisites
 
