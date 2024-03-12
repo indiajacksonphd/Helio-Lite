@@ -7,7 +7,7 @@ sudo mkdir /shared
 sudo mkdir /shared/examples
 sudo mkdir /shared/examples/PyHC
 sudo mkdir /shared/examples/AI_ML
-sudo mkdir /shared/examples/AIA_DONKI_DMLab
+sudo mkdir /shared/examples/AIA_HMI_DONKI_DMLab
 sudo mkdir python_libraries_dependencies
 sudo mkdir custom_modules
 
@@ -37,11 +37,12 @@ curl -o /shared/examples/AI_ML/tensorflow_keras_classification.ipynb https://raw
 curl -o /shared/examples/AI_ML/xgboost.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AI_ML/xgboost.ipynb
 
 # SDO DONKI and DMLab Examples
-curl -o /shared/examples/AIA_DONKI_DMLab/AIA_DONKI.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/AIA_DONKI.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/DMLab.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/GSEP_DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/GSEP_DMLab.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/TimeConversion.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/TimeConversion.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/TimeZones.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/TimeZones.ipynb
+curl -o /shared/examples/AIA_DONKI_DMLab/AIA_DONKI.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/AIA_DONKI.ipynb
+curl -o /shared/examples/AIA_DONKI_DMLab/AIA_DONKI.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/HMI_DONKI.ipynb
+curl -o /shared/examples/AIA_DONKI_DMLab/DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/DMLab.ipynb
+curl -o /shared/examples/AIA_DONKI_DMLab/GSEP_DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/GSEP_DMLab.ipynb
+curl -o /shared/examples/AIA_DONKI_DMLab/TimeConversion.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/TimeConversion.ipynb
+curl -o /shared/examples/AIA_DONKI_DMLab/TimeZones.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/TimeZones.ipynb
 
 
 #Pip Packages and Dependencies
@@ -52,6 +53,7 @@ curl -o python_libraries_dependencies/custom_requirements.txt https://raw.github
 
 #Custom Modules
 curl -o custom_modules/aiaImages.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/aiaImages.py
+curl -o custom_modules/aiaImages.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/hmiImages.py
 curl -o custom_modules/dmLab.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/dmLab.py
 curl -o custom_modules/donkiData.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/donkiData.py
 
