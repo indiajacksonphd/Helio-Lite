@@ -74,7 +74,7 @@ def save_images(b):
         response = requests.get(selected_url)
         if response.status_code == 200:
             image = pilImage.open(BytesIO(response.content))
-            image_filename = os.path.basename(selected_href).replace('.jp2', '.png')
+            image_filename = os.path.basename(selected_href).replace('.jpg', '.png')
             save_path = os.path.join(subdirectory_path, image_filename)
             image.save(save_path)
             print(f'Saved {image_filename}')
@@ -131,13 +131,13 @@ def on_selection_change(change):
 # Fetch and parse the HTML content to create the selection menu
 def fetch_hmi_images(year, month, day, wavelength):
     global base_url, selection_menu, save_button
-    base_url = f'http://jsoc.stanford.edu/data/hmi/images/{year:04d}/{month:02d}/{day:02d}/{wavelength}/'
+    base_url = f'http://jsoc.stanford.edu/data/hmi/images/{year:04d}/{month:02d}/{day:02d}/'
     response = requests.get(base_url)
 
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
 
-        options = [a['href'] for a in soup.find_all('a', href=True) if a['href'].endswith('.jp2')]
+        options = [a['href'] for a in soup.find_all('a', href=True) if a['href'].endswith('.jpg')]
         selection_menu = widgets.SelectMultiple(options=[(os.path.basename(href), href) for href in options],
                                                 disabled=False,
                                                 rows=10)
