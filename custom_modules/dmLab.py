@@ -5,7 +5,7 @@ import pandas as pd
 s3_client = boto3.client('s3', region_name='us-east-1')
 
 # Bucket name
-s3_bucket_name = 'dmlab-datasets'
+s3_bucket_name = 'dmlab-datasets1'
 
 
 def get_dataset(csv_file):
