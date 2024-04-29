@@ -34,12 +34,12 @@ curl -o /shared/examples/AI_ML/tensorflow_keras_classification.ipynb https://raw
 curl -o /shared/examples/AI_ML/xgboost.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AI_ML/xgboost.ipynb
 
 # SDO DONKI and DMLab Examples
-curl -o /shared/examples/AIA_DONKI_DMLab/AIA_DONKI.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/AIA_DONKI.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/AIA_DONKI.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/HMI_DONKI.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/DMLab.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/GSEP_DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/GSEP_DMLab.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/TimeConversion.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/TimeConversion.ipynb
-curl -o /shared/examples/AIA_DONKI_DMLab/TimeZones.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_HMI_DONKI_DMLab/TimeZones.ipynb
+curl -o /shared/examples/AIA_HMI_DONKI_DMLab/AIA_DONKI.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/AIA_DONKI.ipynb
+curl -o /shared/examples/AIA_HMI_DONKI_DMLab/HMI_DONKI.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/HMI_DONKI.ipynb
+curl -o /shared/examples/AIA_HMI_DONKI_DMLab/DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/DMLab.ipynb
+curl -o /shared/examples/AIA_HMI_DONKI_DMLab/GSEP_DMLab.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/GSEP_DMLab.ipynb
+curl -o /shared/examples/AIA_HMI_DONKI_DMLab/TimeConversion.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/TimeConversion.ipynb
+curl -o /shared/examples/AIA_HMI_DONKI_DMLab/TimeZones.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AIA_DONKI_DMLab/TimeZones.ipynb
 
 
 #Pip Packages and Dependencies
