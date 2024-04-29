@@ -50,7 +50,7 @@ curl -o python_libraries_dependencies/custom_requirements.txt https://raw.github
 
 #Custom Modules
 curl -o custom_modules/aiaImages.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/aiaImages.py
-curl -o custom_modules/aiaImages.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/hmiImages.py
+curl -o custom_modules/hmiImages.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/hmiImages.py
 curl -o custom_modules/dmLab.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/dmLab.py
 curl -o custom_modules/donkiData.py https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/custom_modules/donkiData.py
 
