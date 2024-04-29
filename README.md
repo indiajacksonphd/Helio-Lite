@@ -218,7 +218,7 @@ Copy custom Python modules and make the environment available as a Jupyter kerne
 
 ```bash
 sudo cp custom_modules/aiaImages.py /opt/tljh/user/envs/pyhc-all/lib/python3.9
-sudo cp custom_modules/hmiImages.py /opt/tljh/user/envs/pyhc-all/lib/python3.7
+sudo cp custom_modules/hmiImages.py /opt/tljh/user/envs/pyhc-all/lib/python3.9
 sudo cp custom_modules/donkiData.py /opt/tljh/user/envs/pyhc-all/lib/python3.9
 sudo cp custom_modules/dmLab.py /opt/tljh/user/envs/pyhc-all/lib/python3.9
 
