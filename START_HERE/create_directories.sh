@@ -21,12 +21,9 @@ sudo chmod -R 777 /shared
 #PyHC examples
 curl -o /shared/examples/PyHC/coordinate_systems.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/coordinate_systems.ipynb
 curl -o /shared/examples/PyHC/coordinates_demo.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/coordinates_demo.ipynb
-curl -o /shared/examples/PyHC/import-test.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/import-test.ipynb
 curl -o /shared/examples/PyHC/planet_locations.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/planet_locations.ipynb
 curl -o /shared/examples/PyHC/pytplot_demo.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/pytplot_demo.ipynb
-curl -o /shared/examples/PyHC/retrieve_compress.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/retrieve_compress.ipynb
 curl -o /shared/examples/PyHC/units_demo.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/units_demo.ipynb
-curl -o /shared/examples/PyHC/Combining_HPCA_and_EIS_energy_spectra.ipynb https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/PyHC/Combining_HPCA_and_EIS_energy_spectra.ipynb
 
 # AI_ML Examples
 curl -o /shared/examples/AI_ML/marathon-data.csv https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/examples/AI_ML/marathon-data.csv
