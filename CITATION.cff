@@ -1,0 +1,58 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Helio-lite
+message: >-
+  Helio-Lite is a streamlined, cost-effective version of
+  HelioCloud, designed to empower heliophysics researchers
+  in smaller groups and citizen scientists, particularly
+  those operating within budget constraints. As an
+  open-source platform, it facilitates broader community
+  engagement and collaboration in the field of heliophysics
+  research.
+type: software
+authors:
+  - given-names: India
+    family-names: Jackson
+    name-suffix: PhD
+    email: indiajacksonphd@gmail.com
+    affiliation: Georgia State University
+    orcid: 'https://orcid.org/0009-0001-5404-8689'
+identifiers:
+  - type: doi
+    value: 10.3847/1538-4365/ad3fba
+repository-code: 'https://github.com/indiajacksonphd/Helio-lite'
+abstract: >-
+  In the rapidly evolving field of heliophysics research,
+  the demand for accessible, scalable, and cost-effective
+  resources is paramount. Helio-Lite, a free, open-source
+  framework operating within the Amazon Web Services (AWS)
+  ecosystem, utilizes its infrastructure and services.
+  Derived from HelioCloud, it supports smaller research
+  groups' needs, offers essential prerequisites for
+  artificial intelligence (AI) and machine learning (ML)
+  tasks, and acts as a specialized tool for data sharing and
+  computation. Utilizing AWS's potent data storage and
+  computational capabilities, Helio-Lite integrates
+  customized python kernels for heliophysics and AI/ML,
+  facilitating efficient data analysis and enhancing our
+  understanding of solar phenomena. Key functionalities of
+  Helio-Lite include interactive data extraction modules for
+  Atmospheric Imaging Assembly (AIA) images, Helioseismic
+  and Magnetic Imager (HMI) images, and near real-time space
+  weather data directly from the Database of Notifications,
+  Knowledge, Information (DONKI), alongside a comprehensive
+  examples repository. Notably, Helio-Lite addresses
+  challenges posed by vast solar data volumes by parsing
+  directly from Amazon's Simple Storage Service (S3)
+  buckets, improving accessibility and efficiency in
+  analysis. Moving forward, Helio-Lite is poised to undergo
+  continuous enhancements aimed at improving user experience
+  and system management.
+keywords:
+  - >-
+    space weather, heliophysics, artificial intelligence,
+    machine learning, cloud computing, python, Amazon Web
+    Services
+license: MIT
