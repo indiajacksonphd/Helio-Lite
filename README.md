@@ -243,7 +243,12 @@ exit
     ```bash
     jupyter kernelspec list
     conda env list
+    ```
+    You should see the following in the terminal:
 
+    <img width="466" height="201" alt="Screenshot 2025-08-09 at 10 21 17 AM" src="https://github.com/user-attachments/assets/65f7870c-9ad5-46bc-a741-1326d752985b" />
+   
+    ```bash
     conda activate ai-ml
     conda list
     conda deactivate
@@ -255,7 +260,7 @@ exit
 
     These commands will list the available Jupyter kernels and Conda environments, ensuring that your Helio-Lite environment is correctly set up and ready for use.
 
-5. Log Out and Reboot Your EC2 Instance**
+4. Log Out and Reboot Your EC2 Instance**
 
     To ensure all changes are applied and the system is running smoothly, it's a good practice to log out of your current session and restart your EC2 instance. This can be done through the AWS Management Console. Navigate to your instance, select the **Actions** menu, and choose **Instance State > Reboot**. 
 
