@@ -62,8 +62,8 @@ curl https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HER
 ## Step 3: Add an Elastic IP Address
 
 1. In the EC2 dashboard, select **Elastic IPs** from the left menu.
-2. Click **Allocate new address** and follow the prompts to allocate a new Elastic IP.
-3. Once allocated, select **Actions** and choose **Associate address**.
+2. Click **Allocate Elastic IP address** and follow the prompts to allocate a new Elastic IP.
+3. Once allocated, select **Actions** and choose **Associate Elastic IP address**.
     - For **Resource type**, choose **Instance**.
     - For **Instance**, select your previously created instance.
     - **Private IP**: (optional) Specify if needed.
@@ -78,7 +78,7 @@ curl https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HER
 ## Step 5: Create the Helio-Lite Environment
 
 1. Access your EC2 instance using the Elastic IP address through SSH or the AWS Management Console.
-2. Log in with the initial admin account (`admin1`) created during the setup process.
+2. Log in with the initial admin account (username: `admin1`, password: `create initial`) created during the setup process.
 3. Open a terminal within your admin JupyterLab environment to execute the setup scripts.
 
 ### Initialize Conda Enviroment
