@@ -51,7 +51,7 @@ We hope this platform accelerates your research and exploration in the fascinati
 6. **Network Settings**:
    - Create a new security group or select an existing one.
    - Configure rules to allow SSH, HTTP, and HTTPS traffic from the internet.
-7. **Configure Storage**: Choose Elastic Block Storage (EBS) with at least 500 GiB.
+7. **Configure Storage**: Choose Elastic Block Storage (EBS) with at least 500 GiB gp3.
 8. **Advanced Details**: In the user data section, enter the following script:
 
 ```bash
