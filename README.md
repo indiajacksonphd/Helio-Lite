@@ -255,9 +255,9 @@ exit
 
     These commands will list the available Jupyter kernels and Conda environments, ensuring that your Helio-Lite environment is correctly set up and ready for use.
 
-5. Log Out and Restart Your EC2 Instance**
+5. Log Out and Reboot Your EC2 Instance**
 
-    To ensure all changes are applied and the system is running smoothly, it's a good practice to log out of your current session and restart your EC2 instance. This can be done through the AWS Management Console. Navigate to your instance, select the **Actions** menu, and choose **Instance State > Restart**. 
+    To ensure all changes are applied and the system is running smoothly, it's a good practice to log out of your current session and restart your EC2 instance. This can be done through the AWS Management Console. Navigate to your instance, select the **Actions** menu, and choose **Instance State > Reboot**. 
 
 ## Conclusion
 
