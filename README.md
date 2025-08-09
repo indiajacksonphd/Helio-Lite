@@ -247,6 +247,8 @@ exit
     You should see the following in the terminal:
 
     <img width="466" height="201" alt="Screenshot 2025-08-09 at 10 21 17 AM" src="https://github.com/user-attachments/assets/65f7870c-9ad5-46bc-a741-1326d752985b" />
+
+    Next check both of your environments to ensure that all libraries and packages have been installed:
    
     ```bash
     conda activate ai-ml
