@@ -202,9 +202,10 @@ conda activate /opt/tljh/user/envs/pyhc-all
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 ```bash
+sudo pip install --no-cache-dir "Cython<3" "numpy<2" wheel
 sudo pip install --no-cache-dir numpy==1.24.3
 sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/requirements.txt
-sudo pip install --no-cache-dir spacepy --no-build-isolation
+sudo pip install --no-cache-dir --no-build-isolation spacepy regularizepsf==0.2.3
 sudo pip install --use-pep517 --retries 5 --no-cache-dir -r python_libraries_dependencies/custom_requirements.txt
 sudo pip install --no-cache-dir pytplot==1.7.28
 sudo pip install --no-cache-dir pytplot-mpl-temp
@@ -237,7 +238,7 @@ exit
 
 4. Verify the Installation**
 
-    After completing the setup, it's important to verify that everything is installed correctly and operational. Use the following commands to check the Jupyter kernels and Conda environments:
+    After completing the setup, it's important to verify that everything is installed correctly and operational. Open another terminal and use the following commands to check the Jupyter kernels and Conda environments:
 
     ```bash
     jupyter kernelspec list
