@@ -58,7 +58,7 @@ We hope this platform accelerates your research and exploration in the fascinati
 ```bash
 #!/bin/bash
 sudo apt update && sudo apt upgrade -y
-curl https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/jupyterHubBootstrap.py | sudo python3 - --admin admin1
+curl https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HERE/jupyterHubBootstrap.py | sudo python3 - --admin admin1
 ```
 ## Step 3: Add an Elastic IP Address
 
@@ -95,7 +95,7 @@ conda env list
 ```
 You should see:
 
-<img width="375" alt="base" src="https://github.com/indiajacksonphd/Helio-lite/assets/110256537/c0c13cc6-0c83-4642-8d74-27c7419fdce1">
+<img width="375" alt="base" src="https://github.com/indiajacksonphd/Helio-Lite/assets/110256537/c0c13cc6-0c83-4642-8d74-27c7419fdce1">
 
 
 # Creating Jupyter Kernels for AI/ML and PyHC Projects
@@ -107,7 +107,7 @@ This guide details the process of setting up dedicated Jupyter kernels for AI/ML
 Let's pull in the script to create our directories, activate it, then run it. After you run the command, check to make sure that all of your directories have been created and all of your scripts and examples have downloaded in their respective folders.
 
 ```bash
-curl -o create_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-lite/main/START_HERE/create_directories.sh
+curl -o create_directories.sh https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HERE/create_directories.sh
 
 chmod +x create_directories.sh
 
