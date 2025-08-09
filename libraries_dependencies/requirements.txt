@@ -168,7 +168,8 @@ numexpr>=2.6.2
 # numpy>=1.23.0,<1.27,!=1.15.0  # gets installed first in the Dockerfile
 ocbpy==0.3.0
 omegaconf>=1.4,<1.5
-OMMBV==1.0.1
+# OMMBV==1.0.1
+OMMBV>=1.1.0
 ordered-set>=4.0.2,<4.2.0
 overrides
 packaging>=22.0
