@@ -171,7 +171,7 @@ exit
 ## Creating the PyHC Kernel
 
 ### Step 1: Create a New Environment
-Set up a new conda environment for PyHC projects.
+Open another terminal to set up a new conda environment for PyHC projects.
 
 ```bash
 conda deactivate # if you are in another environment environment, deactivate first
