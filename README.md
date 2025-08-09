@@ -266,6 +266,20 @@ exit
 
     To ensure all changes are applied and the system is running smoothly, it's a good practice to log out of your current session and restart your EC2 instance. This can be done through the AWS Management Console. Navigate to your instance, select the **Actions** menu, and choose **Instance State > Reboot**. 
 
+## Account Creation / User Login
+
+New users simply create a username and password on the homepage:
+
+<img width="930" height="518" alt="Screenshot 2025-08-09 at 11 49 47 AM" src="https://github.com/user-attachments/assets/c18b1a3f-3377-486b-bd66-8d1b5f82e1f9" />
+
+
+## Examples
+
+When testing example jupyter notebooks please ensure that you select the correct kernel:
+
+<img width="1049" height="433" alt="Screenshot 2025-08-09 at 11 53 23 AM" src="https://github.com/user-attachments/assets/a7c5813f-02cf-4a98-9aec-370378e6ad2d" />
+
+
 ## Conclusion
 
 You have now successfully set up Helio-Lite on AWS, creating a scalable and collaborative environment for heliophysics research projects. This setup provides a foundation for data sharing, extensive computing resources, and the flexibility to customize the environment according to your specific project needs. For further customization and to add more users or administrators, refer to the AWS and JupyterHub documentation.
