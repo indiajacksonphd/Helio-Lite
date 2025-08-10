@@ -41,6 +41,21 @@ We hope this platform accelerates your research and exploration in the fascinati
 1. Go to the [AWS homepage](https://aws.amazon.com/) and sign up.
 2. Enter your email address, billing information, and select your preferred AWS region.
 
+## Step 2: Create the IAM Policy
+
+1. In the AWS Management Console, search for **IAM** and open the **IAM** service.
+2. In the left sidebar, click **Policies** → **Create policy**.
+3. In the **Visual editor**, choose **Service** → **EC2**.
+4. Under **Access level**, expand **Write** and check **AllocateAddress** and **AssociateAddress**.
+5. Still in the **Visual editor**, click **Add additional permissions**.
+6. Choose **Service** → **STS**.
+7. Under **Access level**, expand **Read** and check **GetCallerIdentity**.
+8. (Optional) Add `ec2:DescribeAddresses` and `ec2:DescribeInstances` under **Read** if you want the ability to verify Elastic IP assignments.
+9. Click **Next** and enter:
+   - **Policy name**: `HelioLiteEC2Policy`
+   - **Description**: `This policy allows the EC2 to create an Elastic IP and optional S3 bucket on launch.`
+10. Click **Create policy**.
+
 ## Step 2: Create an EC2 Instance
 
 1. Navigate to the EC2 dashboard and click "Launch Instance".
