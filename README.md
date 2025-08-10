@@ -108,7 +108,7 @@ sudo tljh-config reload proxy
 
 Your homepage should like similar to the following:
 
-<img width="511" height="466" alt="Screenshot 2025-08-10 at 5 32 36 PM" src="https://github.com/user-attachments/assets/b59c0b2d-04fe-4d98-99c9-9e9501a8793b" />
+<img width="1022" height="933" alt="Screenshot 2025-08-10 at 5 32 36 PM" src="https://github.com/user-attachments/assets/b59c0b2d-04fe-4d98-99c9-9e9501a8793b" />
 
 
 ## Step 5: Explore Your EC2 Instance
