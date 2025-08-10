@@ -101,7 +101,9 @@ We hope this platform accelerates your research and exploration in the fascinati
    - Configure rules to allow SSH and HTTP traffic from the internet.
    - ⚠️ **Security Notice**: This configuration does not use HTTPS, meaning data will be transmitted in plain text. This setup is not secure for production use. To secure the system, configure HTTPS and proper IAM policies. See [AWS Security Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) for guidance.
 7. **Configure Storage**: Choose Elastic Block Storage (EBS) with at least 500 GiB gp3.
-8. **Advanced Details**: In the user data section, enter the following script:
+8. **Advanced Details**:
+   - Under **IAM instance profile**, select the role you created earlier (e.g., `HelioLiteEC2Role`).
+   - In the user data section, enter the following script:
 
 ```bash
 #!/bin/bash
