@@ -86,8 +86,7 @@ We hope this platform accelerates your research and exploration in the fascinati
 4. In the **Permissions policies** search bar, type `HelioLiteEC2Policy` (the policy you just created) and check the box next to it.
 5. Click **Next**.
 6. Enter a role name such as `HelioLiteEC2Role`.
-7. (Optional) Add a description:  
-   `This role allows EC2 instances to create an Elastic IP and optionally access S3 if permissions are enabled.`
+7. (Optional) Add a description: `This role allows EC2 instances to create an Elastic IP and optionally access S3 if permissions are enabled.`
 8. Click **Create role**.
 
 ## Step 4: Create an EC2 Instance
