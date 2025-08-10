@@ -52,9 +52,8 @@ We hope this platform accelerates your research and exploration in the fascinati
    - Create a new security group or select an existing one.
    - Configure rules to allow SSH and HTTP traffic from the internet.
    - ⚠️ **Security Notice**: This configuration does not use HTTPS, meaning data will be transmitted in plain text. This setup is not secure for production use. To secure the system, configure HTTPS and proper IAM policies. See [AWS Security Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) for guidance.
-7. **Configure Storage**: Choose Elastic Block Storage (EBS) with at least 500 GiB gp3.
+7. **Storage**: Choose Elastic Block Storage (EBS) with at least 500 GiB gp3.
 8. **Advanced Details**:
-   - Under **IAM instance profile**, select the role you created earlier (e.g., `HelioLiteEC2Role`).
    - In the user data section, enter the following script:
 
 ```bash
@@ -80,7 +79,7 @@ curl https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HER
   
 - **Important:** The server is **not yet secure**. You must use **HTTP** to access it until HTTPS is configured.
 - **Do not use HTTPS** — it will not work until the server is secured.
-- Your IP address should be in dashes (e.g. if your IP is 12.34.5678 then your url will be http://ec2-12-34-5678.compute-1.amazonaws.com)
+- Example: If your Elastic IP is 12.34.56.78, your URL will be: http://ec2-12-34-56-78.compute-1.amazonaws.com
 
 
 ## Step 5: Explore Your EC2 Instance
@@ -89,9 +88,11 @@ curl https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HER
 
 ## Step 6: Create the Helio-Lite Environment
 
-1. Access your EC2 instance using the Elastic IP address through SSH or the AWS Management Console.
-2. Log in with the initial admin account (username: `admin1`, password: `create initial`) created during the setup process.
-3. Open a terminal within your admin JupyterLab environment to execute the setup scripts.
+1. Access your EC2 instance using SSH or the AWS Management Console.
+2. Log in with:
+   - **Username**: `admin1`
+   - **Password**: `create initial`
+3. Open a terminal in JupyterLab to execute setup scripts.
 
 ### Initialize Conda Enviroment
 
