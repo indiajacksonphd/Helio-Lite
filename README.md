@@ -46,7 +46,7 @@ We hope this platform accelerates your research and exploration in the fascinati
 1. Navigate to the EC2 dashboard and click "Launch Instance".
 2. **Name**: Assign a meaningful name to your instance.
 3. **Operating System**: Select Ubuntu.
-4. **Instance Type**: Choose `c5.4xlarge`.
+4. **Instance Type**: Choose `c5.4xlarge` or larger.
 5. **Key Pair**: Create a new key pair for SSH access. Download and save the `.pem` file securely.
 6. **Network Settings**:
    - Create a new security group or select an existing one.
