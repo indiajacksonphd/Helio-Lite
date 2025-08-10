@@ -1,0 +1,202 @@
+{% extends "page.html" %}
+{% if announcement_login is string %}
+  {% set announcement = announcement_login %}
+{% endif %}
+{% block login_widget %}
+{% endblock login_widget %}
+{% block main %}
+  {% block login %}
+    <div id="login-main" class="container">
+      {% block login_container %}
+
+      <style>
+        #bgVideo {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+        }
+        .video-overlay {
+          position: fixed;
+          inset: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          /*background: rgba(0, 0, 0, 0.35);*/
+          background: linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.60) 100%);
+          z-index: 0;
+        }
+        .login-container {
+          position: relative;
+          z-index: 1;
+          text-align: center;
+          padding-top: 10vh;
+        }
+      </style>
+      
+      <video id="bgVideo" autoplay muted loop playsinline>
+        <source src="https://helioconvert-sdo.s3.us-east-1.amazonaws.com/daily_videos/20250808_stitched.mp4" type="video/mp4">
+      </video>
+      
+      <div class="video-overlay"></div>
+      
+      <div class="login-container">
+        <h2 style="color:white;">Welcome to Helio-Lite</h2>
+        <!-- Keep your login form HTML here -->
+      </div>
+      
+        {% if custom_html %}
+          {{ custom_html | safe }}
+        {% elif login_service %}
+          <div class="service-login">
+            <p id='insecure-login-warning' class='hidden alert alert-warning'>
+                  Security Notice: This setup does not include HTTPS. Data will be transmitted in plain text and is not secure for production environments. 
+                  To secure the system, configure HTTPS and IAM policies. See 
+            </p>
+            <a role="button"
+               class='btn btn-jupyter btn-lg'
+               href='{{ authenticator_login_url | safe }}'>Sign in with {{ login_service }}</a>
+          </div>
+        {% else %}
+          <form action="{{ authenticator_login_url | safe }}"
+                method="post"
+                role="form">
+            <div class="auth-form-header">
+              <h1>Sign in</h1>
+            </div>
+            <div class='auth-form-body m-auto'>
+              <p id='insecure-login-warning' class='hidden alert alert-warning'>
+                  Security Notice: This setup does not include HTTPS. Data will be transmitted in plain text and is not secure for production environments. 
+                  To secure the system, configure HTTPS and IAM policies. See 
+                  <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html" target="_blank">
+                    AWS IAM Documentation
+                  </a>.
+              </p>
+              {% if login_error %}<p class="login_error">{{ login_error }}</p>{% endif %}
+              <input type="hidden" name="_xsrf" value="{{ xsrf }}" />
+              {# Allow full override of the "label" and "input" elements of the username and password fields. #}
+              {% block username_input %}
+                <label for="username_input">Username:</label>
+                <input id="username_input"
+                       {% block username_input_attrs %}
+                       type="text"
+                       autocapitalize="off"
+                       autocorrect="off"
+                       autocomplete="username"
+                       class="form-control"
+                       name="username"
+                       value="{{ username }}"
+                       autofocus="autofocus"
+                       {% endblock username_input_attrs %} />
+              {% endblock username_input %}
+              {% block password_input %}
+                <label for='password_input'>Password:</label>
+                <input id="password_input"
+                       {% block password_input_attrs %}
+                       type="password"
+                       class="form-control"
+                       autocomplete="current-password"
+                       name="password"
+                       {% endblock password_input_attrs %} />
+              {% endblock password_input %}
+              {% if authenticator.request_otp %}
+                {% block otp_input %}
+                  <label for="otp_input">{{ authenticator.otp_prompt }}</label>
+                  <input id="otp_input"
+                         {% block otp_input_attrs %}
+                         class="form-control"
+                         autocomplete="one-time-password"
+                         name="otp"
+                         {% endblock otp_input_attrs %} />
+                {% endblock otp_input %}
+              {% endif %}
+              <div class="feedback-container">
+                <input id="login_submit"
+                       type="submit"
+                       class='btn btn-jupyter form-control'
+                       value='Sign in'
+                       tabindex="3" />
+                <div class="feedback-widget hidden">
+                  <i class="fa fa-spinner"></i>
+                </div>
+              </div>
+              {% block login_terms %}
+                {% if login_term_url %}
+                  <div id="login_terms" class="login_terms">
+                    <input type="checkbox"
+                           id="login_terms_checkbox"
+                           name="login_terms_checkbox"
+                           required />
+                    {% block login_terms_text %}
+                      {# allow overriding the text #}
+                      By logging into the platform you accept the <a href="{{ login_term_url }}">terms and conditions</a>.
+                    {% endblock login_terms_text %}
+                  </div>
+                {% endif %}
+              {% endblock login_terms %}
+            </div>
+          </form>
+        {% endif %}
+      {% endblock login_container %}
+    </div>
+  {% endblock login %}
+    <div style="text-align:center; font-size:0.9em; margin-top:2rem; color:#ccc;">
+      India Jackson, PhD
+<a href="https://orcid.org/0009-0001-5404-8689" target="_blank" style="margin-left:0.5em;">
+  <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID"
+       style="vertical-align:middle; width:16px; height:16px;">
+</a>
+<a href="https://github.com/indiajacksonphd" target="_blank" style="margin-left:0.5em;">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"
+       style="vertical-align:middle; width:16px; height:16px;">
+</a>
+<a href="mailto:ijackson1@gsu.edu" style="margin-left:0.5em;">
+  <img src="https://github.githubassets.com/images/icons/emoji/unicode/2709.png?v8" 
+       alt="Email" style="vertical-align:middle; width:16px; height:16px;">
+</a>
+<br>
+    
+    Funding: NASA || Award Number: SWR2O2R 80NSSC22K0272 <br>
+    Affiliation: Georgia State University || Collaborators: Petrus Martens, PhD & Berkay Aydin, PhD <br>
+
+    
+  </div>
+
+{% endblock main %}
+{% block script %}
+  {{ super() }}
+  <script>
+    if (!window.isSecureContext) {
+      // unhide http warning
+      var warning = document.getElementById('insecure-login-warning');
+      warning.className = warning.className.replace(/\bhidden\b/, '');
+    }
+    
+    // setup onSubmit feedback
+    $('form').submit((e) => {
+      var form = $(e.target);
+      form.find('.feedback-container>input').attr('disabled', true);
+      form.find('.feedback-container>*').toggleClass('hidden');
+      form.find('.feedback-widget>*').toggleClass('fa-pulse');
+    });
+
+      // Calculate date for two days ago
+  const date = new Date();
+  date.setDate(date.getDate() - 2); // two days ago
+  const yyyy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, '0');
+  const dd = String(date.getDate()).padStart(2, '0');
+  const dateStr = `${yyyy}${mm}${dd}`;
+
+  // Update video source
+  const video = document.getElementById('dailyVideo').querySelector('source');
+  video.src = `https://helioconvert-sdo.s3.us-east-1.amazonaws.com/daily_videos/${dateStr}_stitched_annotated.mp4`;
+  document.getElementById('dailyVideo').load();
+
+
+  </script>
+{% endblock script %}
