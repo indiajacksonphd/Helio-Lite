@@ -45,16 +45,39 @@ We hope this platform accelerates your research and exploration in the fascinati
 
 1. In the AWS Management Console, search for **IAM** and open the **IAM** service.
 2. In the left sidebar, click **Policies** → **Create policy**.
-3. In the **Visual editor**, choose **Service** → **EC2**.
-4. Under **Access level**, expand **Write** and check **AllocateAddress** and **AssociateAddress**.
-5. Still in the **Visual editor**, click **Add additional permissions**.
-6. Choose **Service** → **STS**.
-7. Under **Access level**, expand **Read** and check **GetCallerIdentity**.
-8. (Optional) Add `ec2:DescribeAddresses` and `ec2:DescribeInstances` under **Read** if you want the ability to verify Elastic IP assignments.
-9. Click **Next** and enter:
+3. In the **Policy editor**, switch to **JSON** and paste the policy below:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AllocateAddress",
+                "ec2:AssociateAddress",
+                "sts:GetCallerIdentity"
+            ],
+            "Resource": "*"
+        }
+        /* Uncomment this block if you enable S3 later
+        ,{
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "*"
+        }
+        */
+    ]
+}
+```
+   
+5. Click **Next** and enter the following:
    - **Policy name**: `HelioLiteEC2Policy`
    - **Description**: `This policy allows the EC2 to create an Elastic IP and optional S3 bucket on launch.`
-10. Click **Create policy**.
+6. Click **Create policy**.
+
 
 ## Step 2: Create an EC2 Instance
 
