@@ -30,7 +30,7 @@ We hope this platform accelerates your research and exploration in the fascinati
 
 
 
-## Prerequisites
+# Prerequisites
 
 - An AWS account
 - Basic familiarity with AWS services, especially EC2
@@ -78,8 +78,19 @@ We hope this platform accelerates your research and exploration in the fascinati
    - **Description**: `This policy allows the EC2 to create an Elastic IP and optional S3 bucket on launch.`
 6. Click **Create policy**.
 
+## Step 3: Create the IAM Role and Attach the Policy
 
-## Step 2: Create an EC2 Instance
+1. In the AWS Management Console, go to **IAM → Roles → Create role**.
+2. Under **Trusted entity type**, select **AWS service**.
+3. Under **Use case**, choose **EC2** and click **Next**.
+4. In the **Permissions policies** search bar, type `HelioLiteEC2Policy` (the policy you just created) and check the box next to it.
+5. Click **Next**.
+6. Enter a role name such as `HelioLiteEC2Role`.
+7. (Optional) Add a description:  
+   `This role allows EC2 instances to create an Elastic IP and optionally access S3 if permissions are enabled.`
+8. Click **Create role**.
+
+## Step 4: Create an EC2 Instance
 
 1. Navigate to the EC2 dashboard and click "Launch Instance".
 2. **Name**: Assign a meaningful name to your instance.
@@ -98,7 +109,7 @@ We hope this platform accelerates your research and exploration in the fascinati
 sudo apt update && sudo apt upgrade -y
 curl https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HERE/jupyterHubBootstrap.py | sudo python3 - --admin admin1
 ```
-## Step 3: Add an Elastic IP Address
+## Step 5: Add an Elastic IP Address
 
 1. In the EC2 dashboard, select **Elastic IPs** from the left menu.
 2. Click **Allocate Elastic IP address** and follow the prompts to allocate a new Elastic IP.
@@ -110,11 +121,11 @@ curl https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HER
 4. Click **Associate** to link the Elastic IP with your instance.
 
 
-## Step 4: Explore Your EC2 Instance
+## Step 6: Explore Your EC2 Instance
 
 - With your instance selected in the EC2 dashboard, take some time to explore the various tabs and settings available. Understanding your instance's configuration and available options is crucial for effective management and troubleshooting.
 
-## Step 5: Create the Helio-Lite Environment
+## Step 7: Create the Helio-Lite Environment
 
 1. Access your EC2 instance using the Elastic IP address through SSH or the AWS Management Console.
 2. Log in with the initial admin account (username: `admin1`, password: `create initial`) created during the setup process.
