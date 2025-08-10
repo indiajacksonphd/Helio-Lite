@@ -243,6 +243,7 @@ exit
     After completing the setup, it's important to verify that everything is installed correctly and operational. Open another terminal and use the following commands to check the Jupyter kernels and Conda environments:
 
     ```bash
+    conda deactivate
     jupyter kernelspec list
     conda env list
     ```
