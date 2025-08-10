@@ -91,6 +91,7 @@ exit
 Open the terminal again and make sure that conda is activated:
 
 ```bash
+conda deactivate
 conda env list
 ```
 You should see:
