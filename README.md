@@ -312,10 +312,7 @@ exit
 
 ## Account Creation / User Login
 
-New users simply create a username and password on the homepage:
-
-<img width="930" height="518" alt="Screenshot 2025-08-09 at 11 49 47 AM" src="https://github.com/user-attachments/assets/c18b1a3f-3377-486b-bd66-8d1b5f82e1f9" />
-
+New users simply create a username and password of their liking on the homepage.
 
 ## Examples
 
