@@ -58,8 +58,33 @@ We hope this platform accelerates your research and exploration in the fascinati
 
 ```bash
 #!/bin/bash
-sudo apt update && sudo apt upgrade -y
-curl https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HERE/jupyterHubBootstrap.py | sudo python3 - --admin admin1
+set -euxo pipefail
+
+# Basics
+sudo apt-get update
+sudo apt-get install -y python3 python3-pip curl
+
+# Install TLJH (JupyterHub)
+curl -fsSL https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/START_HERE/jupyterHubBootstrap.py \
+  | sudo python3 - --admin admin1
+
+# Wait until Hub files exist
+until [ -d /opt/tljh/hub/share/jupyterhub/templates ]; do sleep 5; done
+
+# Use your custom login template
+sudo mkdir -p /opt/tljh/custom/templates
+curl -fsSL https://raw.githubusercontent.com/indiajacksonphd/Helio-Lite/main/custom_templates/login.html \
+  -o /opt/tljh/custom/templates/login.html
+
+sudo mkdir -p /opt/tljh/config/jupyterhub_config.d
+cat <<'PY' | sudo tee /opt/tljh/config/jupyterhub_config.d/custom_templates.py >/dev/null
+c.JupyterHub.template_paths = ['/opt/tljh/custom/templates']
+PY
+
+# Force HTTP-only (no HTTPS, no redirects)
+sudo tljh-config set https.enabled false
+sudo tljh-config reload proxy
+
 ```
 ## Step 3: Add an Elastic IP Address
 
