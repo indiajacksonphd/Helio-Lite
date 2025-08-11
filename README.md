@@ -32,9 +32,7 @@ We hope this platform accelerates your research and exploration in the fascinati
 
 # Prerequisites
 
-- An AWS account
-- Basic familiarity with AWS services, especially EC2
-- SSH client installed on your computer
+Before starting, ensure you have an AWS account with billing enabled. If you do not already have one, you can create it by following Step 1 below. The remaining steps will guide you through launching an EC2 instance, connecting to it, and setting up Helio-Lite from scratch.
 
 ## Step 1: Create an AWS Account
 
