@@ -21,9 +21,9 @@ Helio-Lite is a streamlined, cost-effective version of HelioCloud, designed to e
 As an open-source project, Helio-Lite invites contributions and collaborations from researchers, developers, and enthusiasts in the field of heliophysics. We welcome innovations and improvements to enhance the platform's capabilities.
 
 ## Setting Up Helio-Lite
-We’ve provided a short video tutorial demonstrating the full setup process from AWS account creation to running your first Jupyter notebook.
+We’ve provided a 20 minute video tutorial demonstrating the full setup process from AWS account creation to running your first Jupyter notebook.
 
-**YouTube link will be added here after editing.**
+[![Watch the video](https://img.youtube.com/vi/318Z1h9paMU/0.jpg)](https://www.youtube.com/watch?v=318Z1h9paMU)
 
 This guide outlines the steps to set up Helio-Lite on AWS, providing a user-friendly experience for researchers and enthusiasts in heliophysics.
 
