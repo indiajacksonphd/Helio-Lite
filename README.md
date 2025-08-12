@@ -23,7 +23,11 @@ As an open-source project, Helio-Lite invites contributions and collaborations f
 ## Setting Up Helio-Lite
 We’ve provided a 20 minute video tutorial demonstrating the full setup process from AWS account creation to running your first Jupyter notebook.
 
-[![Watch the video](https://img.youtube.com/vi/318Z1h9paMU/0.jpg)](https://www.youtube.com/watch?v=318Z1h9paMU)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=318Z1h9paMU" target="_blank">
+    <img src="https://img.youtube.com/vi/318Z1h9paMU/0.jpg" alt="Helio-Lite Setup Video" width="800">
+  </a>
+</p>
 
 This guide outlines the steps to set up Helio-Lite on AWS, providing a user-friendly experience for researchers and enthusiasts in heliophysics.
 
