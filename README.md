@@ -25,7 +25,7 @@ We’ve provided a 20 minute video tutorial demonstrating the full setup process
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=318Z1h9paMU" target="_blank">
-    <img src="https://img.youtube.com/vi/318Z1h9paMU/0.jpg" alt="Helio-Lite Setup Video" width="800">
+    <img src="https://dmlab-datasets1.s3.us-east-1.amazonaws.com/thumbnail.png" alt="Helio-Lite Setup Video" width="800">
   </a>
 </p>
 
