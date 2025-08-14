@@ -54,7 +54,7 @@ Before starting, ensure you have an AWS account with billing enabled. If you do 
 4. **Instance Type**: Choose `c5.4xlarge` or larger.
 5. **Key Pair**: Create a new key pair for SSH access. Download and save the `.pem` file securely.
 6. **Network Settings**:
-   - Create a new security group or select an existing one.
+   - PC and Subnet should be set to default, but you are welcome to change then. See [AWS guide for creating a custom VPC and Subnet](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html) for guidance. 
    - Configure rules to allow SSH and HTTP traffic from the internet.
    - ⚠️ **Security Notice**: This configuration does not use HTTPS, meaning data will be transmitted in plain text. This setup is not secure for production use. To secure the system, configure HTTPS and proper IAM policies. See [AWS Security Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) for guidance.
 7. **Storage**: Choose Elastic Block Storage (EBS) with at least 500 GiB gp3.
