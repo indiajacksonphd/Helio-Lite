@@ -1,4 +1,4 @@
-# Helio-Lite: A Streamlined Heliophysics Research Platform
+# Helio-Lite | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17611741.svg)](https://doi.org/10.5281/zenodo.17611741)
 
 Helio-Lite is a streamlined, cost-effective version of HelioCloud, designed to empower heliophysics researchers in smaller groups and citizen scientists, particularly those operating within budget constraints. As an open-source platform, it facilitates broader community engagement and collaboration in the field of heliophysics research.
 
